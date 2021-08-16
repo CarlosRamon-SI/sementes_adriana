@@ -1,0 +1,955 @@
+#cv-login {
+    background: url(sementes_adriana/login_bg.png) no-repeat top center;
+}
+
+:focus,
+:active,
+:hover {
+    outline: none;
+}
+
+::placeholder {
+    color: #243c5c;
+}
+
+.fg-toolbar {
+    display: none !important;
+}
+
+#rodape {
+    display: none !important;
+}
+
+#an-informacao-beneficios {
+    display: none !important;
+}
+
+
+/***
+/* TEMA
+*/
+
+body,
+.ui-widget-content {
+    background: none;
+    border: none;
+}
+
+.ui-widget-content {
+    color: #243c5c !important;
+}
+
+.ui-autocomplete {
+    background: white;
+}
+
+
+/* Botões */
+
+button {
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-weight: normal !important;
+    color: #243c5c !important;
+    background: none !important;
+    border: none !important;
+}
+
+button span {
+    left: 0 !important;
+    padding: 0 !important;
+    margin: 0 5px 0 0 !important;
+    line-height: 25px !important;
+    position: relative !important;
+    top: 0 !important;
+}
+
+button .ui-icon {
+    float: left !important;
+}
+
+button:hover .ui-button-text {
+    text-decoration: underline !important;
+    color: #40a3d4 !important;
+}
+
+
+/* ícones */
+
+.ui-icon-circle-plus {
+    width: 25px;
+    height: 25px;
+    background: url(sementes_adriana/ui-icon-circle-plus.png) !important;
+}
+
+.ui-icon-closethick {
+    width: 25px;
+    height: 25px;
+    background: url(sementes_adriana/ui-icon-closethick.png) no-repeat center center !important;
+}
+
+.ui-icon-disk {
+    width: 34px;
+    height: 22px;
+    background: url(sementes_adriana/ui-icon-disk.png) !important;
+}
+
+.ui-icon-locked {
+    width: 21px;
+    height: 28px;
+    background: url(sementes_adriana/ui-icon-locked.png) !important;
+}
+
+.ui-icon-note {
+    width: 22px;
+    height: 23px;
+    background: url(sementes_adriana/ui-icon-note.png) !important;
+}
+
+.rs-cv-botoes-rodape .ui-icon-note {
+    width: 24px;
+    height: 24px;
+    background: url(sementes_adriana/ui-icon-note-reverse.png) !important;
+}
+
+.rs-cv-botoes-rodape .ui-icon-disk {
+    width: 37px;
+    height: 24px;
+    background: url(sementes_adriana/ui-icon-disk-reverse.png) !important;
+}
+
+.rs-cv-botoes-rodape .cv-button {
+    margin-left: 10px;
+}
+
+.ui-datepicker-trigger {
+    position: absolute;
+    left: unset;
+    right: 20px;
+}
+
+.ui-datepicker-calendar {
+    background: #fff !important;
+}
+
+
+/* Header */
+
+#cv-container-topo {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 70px;
+}
+
+#logo {
+    z-index: 3;
+    width: 97px !important;
+    height: 54px !important;
+    margin: 8px 0 0 3% !important;
+    background: url(../img/logo_atto.png) no-repeat;
+}
+
+#cv-container-topo #logo {
+    position: fixed;
+}
+
+#cv-div-logo {
+    height: 70px;
+    background: #243c5c !important;
+    border-bottom: 5px solid #40a3d4;
+}
+
+#cv-div-logo #cv-div-buttons {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+#cv-div-logo #cv-div-buttons #rs-cv-div-agrupa-botoes {
+    box-sizing: border-box;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    padding-right: 2.5%;
+    text-align: right;
+    background: #243c5c;
+    border-bottom: 5px solid #40a3d4;
+}
+
+#cv-div-logo #cv-div-buttons #rs-cv-div-agrupa-botoes button {
+    margin: 20px 20px 0 0;
+}
+
+#cv-div-logo #cv-div-buttons #rs-cv-div-agrupa-botoes button .ui-icon {
+    margin-right: 5px !important;
+}
+
+#cv-div-logo #cv-div-buttons #rs-cv-div-agrupa-botoes button .ui-button-text {
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#cv-div-logo #cv-div-nomecan {
+    float: right;
+    margin: 80px 2.5% 0 0;
+}
+
+#cv-div-logo #cv-div-nomecan label {
+    z-index: 1;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+#cv-div-logo #cv-div-foto {
+    position: fixed;
+    float: none;
+    z-index: 3;
+    right: 2.5%;
+    margin-right: 500px;
+}
+
+#cv-div-logo #cv-div-foto #foto-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#cv-div-top {
+    display: none;
+}
+
+#cv-div-subtitulo {
+    display: none;
+}
+
+#cv-frmcurriculo {
+    padding-top: 140px;
+    background: none;
+}
+
+
+/* UI-Dialog */
+
+.ui-dialog {
+    padding: 0 !important;
+    background: #e3e6e9 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    color: #fff !important;
+    background: #243c5c !important;
+    font-weight: normal !important;
+}
+
+.ui-dialog .ui-dialog-buttonset button {
+    height: 34px !important;
+    padding: 0 10px !important;
+    margin: 6px 10px 0 0;
+    background: #243c5c !important;
+    border-radius: 0 !important;
+}
+
+.ui-dialog .ui-dialog-buttonset button span {
+    margin: 0 !important;
+    color: #fff !important;
+}
+
+.ui-dialog .ui-dialog-buttonset button:hover {
+    background: #40a3d4 !important;
+}
+
+.ui-dialog .ui-dialog-buttonset button:hover .ui-button-text {
+    text-decoration: none !important;
+}
+
+
+/* Login */
+
+#cv-div-geral-login {
+    position: relative;
+    box-sizing: border-box;
+    width: 740px !important;
+    height: 530px !important;
+    margin-top: 0 !important;
+    background: #fff url(sementes_adriana/botao_acesso.png) no-repeat 500px 50px !important;
+    border-radius: 0;
+}
+
+#cv-div-geral-login #rs-cv-btn-vagasdisponiveis {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 245px;
+    height: 67px;
+    background: url(sementes_adriana/botao_vagas.png) !important;
+}
+
+#cv-div-geral-login #rs-cv-btn-vagasdisponiveis:hover {
+    opacity: 0.8;
+}
+
+#cv-div-geral-login #rs-cv-btn-vagasdisponiveis span {
+    display: none;
+}
+
+#cv-div-geral-login #BtnPreCadastro {
+    position: absolute;
+    top: 40px;
+    left: 255px;
+    width: 245px;
+    height: 67px;
+    background: url(sementes_adriana/botao_novo.png) !important;
+}
+
+#cv-div-geral-login #BtnPreCadastro:hover {
+    opacity: 0.8;
+}
+
+#cv-div-geral-login #BtnPreCadastro span {
+    display: none;
+}
+
+#cv-div-geral-login #cv-titulo {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 0 70px 0 55px;
+    margin: 175px 0 0;
+    color: #243c5c;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#cv-div-geral-login #cv-div-dicaspreenchimento {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 0 70px 0 55px;
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+#cv-div-geral-login #cv-div-agrupador {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 0 70px 0 55px;
+    margin: 10px 0 0;
+}
+
+#cv-div-geral-login #cv-div-agrupador form {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-idioma {
+    display: none;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-usuario {
+    float: left;
+    width: auto;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-usuario #labelusuario {
+    width: auto;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-usuario label.error {
+    margin-left: 35px;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-senha {
+    float: right;
+    width: auto;
+}
+
+#cv-div-geral-login #cv-div-agrupador #cv-div-senha #labelusuario {
+    width: auto;
+}
+
+#cv-div-geral-login #cv-div-agrupador form {
+    height: auto !important;
+}
+
+#cv-div-geral-login #cv-div-agrupador form div {
+    clear: none !important;
+}
+
+#cv-div-geral-login #cv-div-agrupador #botaoesquecisenha {
+    float: right;
+    margin: 0 !important;
+    font-size: 12px;
+    color: #666;
+}
+
+#cv-div-geral-login #cv-div-agrupador #btnEntrar {
+    float: none;
+    width: 165px;
+    height: 40px;
+    margin: 40px 0 0 50%;
+    left: -82px;
+    background: #243c5c !important;
+    border-radius: 0;
+}
+
+#cv-div-geral-login #cv-div-agrupador #btnEntrar:hover {
+    background: #41a3d4 !important;
+}
+
+#cv-div-geral-login #cv-div-agrupador #btnEntrar>span {
+    margin: 0;
+    padding: 0 !important;
+    height: auto;
+    color: #fff;
+    background: none;
+}
+
+#cv-div-geral-login #cv-div-agrupador #btnEntrar>span span {
+    display: none;
+}
+
+#cv-div-geral-login #cv-div-agrupador #btnEntrar:hover span {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+
+/* Menu */
+
+.ui-tabs-nav {
+    background: none;
+    border: none;
+}
+
+.ui-tabs-nav li {
+    width: auto !important;
+    height: 35px;
+    padding: 0 !important;
+    margin-right: 20px !important;
+    font-size: 11px;
+    text-align: center !important;
+    line-height: 35px;
+    font-weight: normal !important;
+    text-transform: uppercase !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.ui-tabs-nav li a {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    padding: 0 20px !important;
+    color: #243c5c !important;
+    border-bottom: 5px solid #40a3d4;
+}
+
+.ui-tabs-nav li.ui-state-active {
+    background: #243c5c !important;
+}
+
+.ui-tabs-nav li.ui-state-active a,
+.ui-tabs-nav li:hover a {
+    color: #fff !important;
+    background: #243c5c !important;
+    border: none !important;
+}
+
+
+/* Formulários */
+
+.ui-tabs .ui-tabs-panel {
+    padding: 20px .2em 0 !important;
+}
+
+.ui-accordion-header {
+    background: none !important;
+    border: none !important;
+}
+
+.ui-accordion-header div {
+    min-height: 41px;
+    padding: 0 50px 10px 50px!important;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #243c5c;
+}
+
+.cv-grupo {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #e3e6e9;
+}
+
+.cv-div-campos {
+    border: none;
+    padding: 0 50px;
+}
+
+.cv-div-campo {
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.cv-div-campo>div {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.cv-div-campo label {
+    display: none;
+}
+
+.cv-div-campo input,
+.cv-div-campo select {
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 8px;
+    margin: 0 10px 0 0;
+    color: #243c5c;
+    border: 2px solid #fff;
+    border-radius: 0;
+}
+
+.cv-div-campo textarea {
+    box-sizing: border-box;
+    height: 200px;
+    color: #243c5c;
+    border: 2px solid #fff;
+    border-radius: 0;
+}
+
+.cv-div-campo input:focus,
+.cv-div-campo select:focus {
+    border: 2px solid #40a3d4;
+}
+
+.cv-div-hintquest {
+    font-size: 18px;
+    line-height: 5px;
+    padding: 0 50px 10px 50px!important;
+}
+
+.hasDatepicker {
+    padding-right: 40px !important;
+}
+
+
+/* Dados complementares */
+
+#FORM_GRUPO_2_3>div>div:nth-child(2) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_3>div>div:nth-child(6) {
+    clear: both;
+    margin-top: 40px;
+}
+
+#FORM_GRUPO_2_3>div>div:nth-child(7) {
+    margin-top: 40px;
+}
+
+#FORM_GRUPO_2_3>div>div:nth-child(8) {
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#FORM_GRUPO_2_2>div>div:nth-child(3) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_2>div>div:nth-child(5) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_1>div>div:nth-child(1) {
+    display: none;
+}
+
+#FORM_GRUPO_2_1>div>div:nth-child(5) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_1>div>div:nth-child(8) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_4>div>div:nth-child(3) {
+    clear: both;
+}
+
+#FORM_GRUPO_2_4>div>div:nth-child(6) {
+    clear: both;
+}
+
+
+/* Ícones */
+
+#GRUPO_1_1 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-dados_pessoais.png) no-repeat;
+}
+
+#GRUPO_1_2 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-endereco.png) no-repeat;
+}
+
+#GRUPO_1_4 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-contato.png) no-repeat;
+}
+
+#GRUPO_1_5 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-endereco_web.png) no-repeat;
+}
+
+#GRUPO_1_3 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-documentos.png) no-repeat;
+}
+
+#GRUPO_1_6 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-experiencia_profissional.png) no-repeat;
+}
+
+#GRUPO_1_8 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-escolaridade.png) no-repeat;
+}
+
+#GRUPO_1_9 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-escolaridade.png) no-repeat;
+}
+
+#GRUPO_1_12 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-linguas.png) no-repeat;
+}
+
+#GRUPO_1_11 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-informatica.png) no-repeat;
+}
+
+#GRUPO_1_10 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-areas_interesse.png) no-repeat;
+}
+
+#GRUPO_1_7 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-nivel_cargo.png) no-repeat;
+}
+
+#anuncios_frame>.cv-div-campos,
+#GRUPO_3_1 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-historico_profissional.png) no-repeat;
+}
+
+#Pagina_2 .ui-accordion-header div {
+    background: url(sementes_adriana/icon-referencias.png) no-repeat;
+}
+
+
+/* Tabelas */
+
+.dataTables_wrapper {
+    margin-bottom: 10px;
+}
+
+.dataTables_wrapper table {
+    border-spacing: 0;
+    border: none;
+}
+
+.dataTables_wrapper table th {
+    padding: 5px 5px 10px 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal !important;
+    color: #243c5c !important;
+    background: #fff !important;
+    border: none !important;
+    border-right: 10px solid #e3e6e9 !important;
+    cursor: pointer;
+}
+
+.dataTables_wrapper table td {
+    padding: 0px 5px 5px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #808080;
+    background: #fff !important;
+    border: none !important;
+    border-right: 10px solid #e3e6e9 !important;
+}
+
+.dataTables_wrapper table tr:last-child td {
+    padding-bottom: 10px;
+}
+
+
+/* Whatsapp */
+
+a.whatsapp_chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url(sementes_adriana/whatsapp.png) no-repeat top center
+}
+
+a.whatsapp_chat span {
+    display: none;
+}
+
+
+/* Personality */
+
+#ORIQUE_001_007 {
+    padding: 20px;
+    color: #333;
+    font-size: 16px;
+    border-color: #fff;
+}
+
+#ORIQUE_001_007 .ui-icon {
+    display: none;
+}
+
+#ORIQUE_001_007 .cv-div-hintquest {
+    font-size: 16px !important;
+}
+
+#FORM_GRUPO_2_7 .cv-div-resposta {
+    position: relative;
+    color: #243c5c;
+    line-height: unset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none !important;
+}
+
+#FORM_GRUPO_2_7 .cv-div-resposta label {
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+#FORM_GRUPO_2_7 .ui-accordion-header {
+    margin-top: 20px;
+}
+
+#FORM_GRUPO_2_7 .cv-div-hintquest {
+    line-height: unset;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff url(images/ui-bg_highlight-soft_25_ffef8f_1x100.png) 50% top repeat-x;
+    margin: 5px;
+    padding: 15px;
+}
+
+
+/* Radio button diferenciado */
+
+
+/* Hide the browser's default radio button */
+
+#FORM_GRUPO_2_7 .cv-div-resposta input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    border: 0px;
+    width: 10%;
+    height: 1.1em;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50px !important;
+    height: 20px !important;
+    width: 20px !important;
+    background-color: #eee !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+#FORM_GRUPO_2_7 .cv-div-resposta:hover input~.checkmark {
+    background-color: #ccc !important;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+#FORM_GRUPO_2_7 .cv-div-resposta input:checked~.checkmark {
+    background-color: #2196F3 !important;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "" !important;
+    position: absolute !important;
+    display: none !important;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+#FORM_GRUPO_2_7 .cv-div-resposta input:checked~.checkmark:after {
+    display: block !important;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+#FORM_GRUPO_2_7 .cv-div-resposta .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* TAMANHO DA BOX 'TERMO COOKIES' */
+
+#rs-cv-curriculo-termo-cookies {
+    height: auto !important;
+}
+
+#R122CCR_CARHOR_1_9_3 {
+    /* APERFEIÇOAMENTO > CARGA HORARIA */
+    width: 120px;
+}
+
+#R122CCF_NOMCUF_1_8_1 {
+    /* FORMAÇÃO > NOME CURSO */
+    width: 663px;
+}
+
+#R122CCF_NOMOEM_1_8_2 {
+    /* FORMAÇÃO > NOME ENTIDADE */
+    width: 493px;
+}
+
+#R122CCF_USU_CCFNFO_1_8_3 {
+    /* FORMAÇÃO > NIVEL FORMAÇÃO */
+    width: 160px;
+}
+
+#R122CCF_SITCUF_1_8_4 {
+    /* FORMAÇÃO > SITUAÇÃO */
+    width: 169px;
+}
+
+#R122CCF_USU_CODMOD_1_8_10 {
+    /* FORMACAO > MODALIDADE */
+    width: 140px;
+}
+
+#R122CCF_NOMCID_1_8_7 {
+    /* FORMAÇÃO > CIDADE FORMAÇÃO */
+    width: 325px;
+}
+
+#R122CCF_LABELCAMPO_1_8_8USU_ANOINI .ui-datepicker-trigger,
+#R122CCF_LABELCAMPO_1_8_9USU_ANOFIM .ui-datepicker-trigger {
+    /* SELETOR CALENDARIO ANO INICIO E FIM -> FORMACAO */
+    display: none !important;
+}
+
+.fixed {
+    position: fixed;
+    top: 75px;
+    z-index: 1;
+    width: 988px;
+}
+
+#ORIQUE_001_007 {
+    /* CONTADOR QUESTIONARIO */
+    position: sticky;
+    top: 75px;
+    z-index: 1;
+}
+
+.ui-resizable-handle {
+    /* RESIZE MODAL OFF */
+    display: none !important;
+}
+
+#R122CEA_NOMOEM_3_1_1 {
+    /* HISTORICO PROFISSIONAL -> NOME EMPRESA */
+    width: 333px;
+}
+
+#R122CEA_COMEMP_3_1_4 {
+    /* HISTORICO PROFISSIONAL -> COMENTÁRIOS */
+    width: 633px;
+}
+
+#R122CEA_USU_CODPAI_3_1_7 {
+    /* HISTORICO PROFISSIONAL -> PAIS */
+    width: 84px;
+}
+
+#R122CEA_USU_CODCID_3_1_9 {
+    /* HISTORICO PROFISSIONAL -> CIDADE */
+    width: 100px;
+}
+
+#R122EEL_ENDELE_1_5_2::placeholder {
+    color: gray;
+}
+
+#Pagina_questionarios>div>div {
+    /* TESTE DE PERFIL -> TITLE */
+    display: none !important;
+}
+
+#cv-paginas>ul>li:nth-child(2),
+#cv-paginas>ul>li:nth-child(3),
+#cv-paginas>ul>li:nth-child(4),
+#cv-paginas>ul>li:nth-child(5),
+#cv-paginas>ul>li:nth-child(6),
+
+/* #FORM_GRUPO_2_3>div>div:nth-child(2),
+#FORM_GRUPO_2_3>div>div:nth-child(3),
+#FORM_GRUPO_2_3>div>div:nth-child(5),
+#FORM_GRUPO_2_3>div>div:nth-child(7), */
+
+#GRUPO_1_6,
+#R122CEX_CAMAUX1_2_5_2 {
+    /* ABAS DEFALT HIDE */
+    display: none;
+}
+
+#R122CEX_LABELCAMPO_1_6_1USU_NIVFOR {
+    margin-bottom: 10px;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons {
+    width: auto !important;
+    max-width: 65% !important;
+}
