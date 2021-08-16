@@ -189,9 +189,9 @@ $(document).ready(function() {
             $('#GRUPO_1_8 > div.cv-grupo-maximiza.rh-grupo-maximiza.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all.grupo-criado').after($('#FORM_GRUPO_1_6'));
 
             // MUDA TEXTO GRUPO 'EXPERIENCIA EM METODOLOGIAS...'
-            $('#GRUPO_1_12 > div.cv-grupo-maximiza.rh-grupo-maximiza.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all.grupo-criado > div').text('Experi\u00eancia em metodologias e ferramentas');
+            $('#GRUPO_1_12 > div.cv-grupo-maximiza.rh-grupo-maximiza.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all.grupo-criado > div').text('Experi\u00eancia em sistemas, metodologias e ferramentas');
             // MUDA TEXTO DE INSERÇÃO AO GRUPO 'EXPERIENCIA EM METODOLOGIAS'
-            $('#GRUPO_1_12 > div.cv-div-campos.rh-div-campos.ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active > button > span').text('Experi\u00eancia em metodologias e ferramentas');
+            $('#GRUPO_1_12 > div.cv-div-campos.rh-div-campos.ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active > button > span').text('Experi\u00eancia em sistemas, metodologias e ferramentas');
             // RE-INSERE ICONE 
             $('<span>', {
                 'class': 'ui-icon ui-icon-circle-plus'
